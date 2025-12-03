@@ -1,0 +1,58 @@
+* {
+    margin: 0; /*1. Đặt khoảng cách lề ngoài xung quanh phần tử (trên, dưới, trái, phải).*/
+    padding: 0; /*2. Đặt khoảng cách lề trong (đệm) giữa nội dung và viền của phần tử.*/
+    background-color: lightgoldenrodyellow; /*3. Đặt màu nền*/
+    font-family: Arial; /*4. Đặt kiểu phông chữ cho văn bản*/
+}
+
+h1 {
+    color: brown; /*5. Đặt màu cho văn bản*/
+    font-weight: bold; /*6. Đặt độ dày (đậm nhạt) của chữ*/
+    text-align: center; /*7. Căn chỉnh văn bản bên trong phần tử*/
+    
+}
+
+.paragraph{
+    width: 800px; /*8. Đặt chiều rộng của một phần tử*/
+    height: 800px; /*9. Đặt chiều cao của một phần tử*/
+    border: 1px solid brown; /*10. Đặt viền xung quanh phần tử*/
+    box-shadow: 5px 5px 10px grey; /*11. Thêm bóng đổ cho phần tử*/
+    margin-left: auto; /*12. Đặt khoảng cách lề ngoài left*/
+    margin-right: auto; /*13. Đặt khoảng cách lề ngoài right*/
+    padding: 10px;
+}
+
+div {
+    margin-top: 20px; /*14. Đặt khoảng cách lề ngoài top*/
+    font-size: 30px; /*15. Đặt kích thước của chữ*/
+    text-align: center;
+    color: brown;
+}
+
+h2 {
+    color: brown;
+    margin-top: 20px;
+}
+
+h3 {
+    color: brown;
+    margin-top: 5px;
+}
+
+#att1 {
+    background-color: #ee4d2d;
+}
+
+#att2 {
+    color: white;
+    background-color: #ee4d2d;
+}
+
+#att3 {
+    border: 2px solid #ee4d2d;
+    border-radius: 2px;
+}
+
+ul li p {
+    display: inline;
+}

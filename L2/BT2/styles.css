@@ -1,0 +1,107 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif;
+}
+/* Top bar */
+.top-bar {
+    background: #f53d2d;
+    color: white;
+    padding: 6px 40px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.top-bar a:hover { 
+    color: lightgray; 
+}
+
+.top-bar .icons {
+    width: 16px;
+    height: 16px;
+    /* margin-left: 5px; */
+    vertical-align: middle;
+}
+
+/* Main header */
+.main-header {
+    background: #f53d2d;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* Left */
+.left-main-header {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.left-main-header img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.left-main-header span {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Center */
+.center-main-header {
+    flex: 1;
+    position: relative;
+    width: 400px;
+}
+
+.center-main-header input {
+    /*width: 80%;
+    padding: 10px 45px 10px 15px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 3px 0 0 3px;*/
+    width: 80%;
+    padding: 10px 45px 10px 15px; /* add right padding so text won't overlap icon */
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.center-main-header button {
+    background: #fb5533;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+}
+.center-main-header button img {
+    width: 18px;
+}
+
+.suggestion {
+    margin-top: 6px;
+}
+
+.suggestion a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Right */
+.right-main-header img {
+    width: 28px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+}
