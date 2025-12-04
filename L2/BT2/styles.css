@@ -23,6 +23,7 @@
     color: lightgray; 
 }
 
+
 .top-bar .icons {
     width: 16px;
     height: 16px;
@@ -64,14 +65,8 @@
 }
 
 .center-main-header input {
-    /*width: 80%;
-    padding: 10px 45px 10px 15px;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    outline: none;
-    border-radius: 3px 0 0 3px;*/
     width: 80%;
-    padding: 10px 45px 10px 15px; /* add right padding so text won't overlap icon */
+    padding: 10px 45px 10px 15px; 
     border-radius: 3px;
     border: 1px solid #ccc;
     box-sizing: border-box;
