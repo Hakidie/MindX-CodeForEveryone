@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    /* border: 1px solid white; */
+    /* box-shadow: 0px 15px 0px 5px #888888; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content {
+    position: absolute;
+    width: 637px;
+    height: 692px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+
+.text {
+    margin: 39px 0px 39px 0px;
+    width: 637px;
+    height: 614px;
+    /* border: 1px solid red; */
+}
+
+h1 {
+    padding: 1px 0px 1px 0px;
+    width: 637px;
+    height: 324px;
+    font-size: 97px;
+    font-weight: 200;
+    /* border: 1px solid pink; */
+    color:#252525;
+}
+
+.text p {
+    margin: 48px auto 0px auto;
+    width: 306px;
+    height: 128px;
+    /* border: 1px solid pink; */
+    font-size: 24px;
+    color:#252525;
+    opacity: 0.8;
+}
+
+.text button {
+    margin: 48px auto 0px auto;
+    padding: 12px 24px 12px 24px;
+    width: 182px;
+    height: 66px;
+    border-radius: 36px;
+    /* border: 1px solid pink; */
+    font-size: 24px;
+    background-color:#252525;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.para-1, .para-2 {
+    position: absolute;
+    width: 434px;
+    height: 104px;
+    /* border: 2px solid blue; */
+}
+
+.para-1 {
+    top: 99px;
+    left: 64px;
+}
+
+.para-2 {
+    top: 812px;
+    left: 942px;
+}
+
+h4 {
+    width: 434px;
+    height: 32px;
+    /* border: 2px solid pink; */
+    font-size: 24;
+    font-weight: bold;
+    color: #252525;
+    opacity: 0.45;
+}
+
+.para-1 p, .para-2 p {
+    /* margin-top: 8px; */
+    /* padding: 0px 2% 0px 0px; */
+    width: 434px;
+    height: 64px;
+    /* border: 2px solid pink; */
+    font-size: 24;
+    color: #252525;
+    opacity: 0.8;
+}
+
+.explosion-img {
+    position: absolute;
+    top: 220px;
+    left: 83.88px;
+}
+
+.star-img {
+    position: absolute;
+    top: 237px;
+    left: 311px;
+    z-index: 10;
+}
+
+.bottom-img {
+    position: absolute;
+    top: 432px;
+    left: 64px;
+}
+
+.top-img {
+    position: absolute;
+    top: 64px;
+    left: 964px;
+}
+
+.Star-img {
+    position: absolute;
+    top: 535px;
+    left: 921px;
+    z-index: 10;
+}
+
+.party-img {
+    position: absolute;
+    top: 647px;
+    left: 1135px;
+}
