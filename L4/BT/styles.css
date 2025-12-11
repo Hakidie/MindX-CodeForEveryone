@@ -258,3 +258,151 @@
         }
     }
 }
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 160px;
+
+    padding: 80px;
+    height: 248px;
+    background: #A4074D;
+
+    .text {
+        font-family: "Plus Jakarta Sans";
+        font-size: 36px;
+        font-weight: SemiBold;
+        color: white;
+    }
+
+    .input-email {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 641.5px;
+        height: 88px;
+        padding: 8px 8px 8px 40px;
+        /* background-color: white; */
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 24px;
+        /* opacity: 0.7; */
+
+        img {
+            position: absolute;
+            top: 50%;
+            /* left: 10px; */
+            transform: translateY(-50%);
+            width: 32px;
+            height: 32px;
+        }
+
+        input {
+            font-family: "Inter";
+            font-size: 20px;
+            margin-left: 40px;
+            border: none;
+            background: transparent;
+        }
+
+        button {
+            position: absolute;
+            right: 8px;
+            width: 186px;
+            height: 72px;
+            border-radius: 16px;
+            border: none;
+            background: #1A2434;
+
+            font-family: "Inter";
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            /* opacity: 1 !important; */
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+
+    height: 382px;
+    padding: 80px;
+    background-color: #1A2434;
+
+    .digilearn-container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 24px;
+
+        width: 345px;
+        height: 170px;
+
+        .digilearn {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+
+            height:38px;
+
+            p {
+                font-family: "Plus Jakarta Sans";
+                font-size: 27px;
+                font-weight: SemiBold;
+                color: white;
+            }
+        }
+
+        p {
+            font-family: "Inter";
+            font-size: 20px;
+            line-height: 1.8;
+            color: white;
+            opacity: 0.7;
+        }
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+
+        .quicklinks-container, 
+        .resources-container,  
+        .social-media-container {
+            /* margin-top: 40px; */
+            font-family: "Plus Jakarta Sans";
+            font-size: 27px;
+            font-weight: SemiBold;
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            margin-top: 16px;
+            color: white;
+
+            a {
+                text-decoration: none;
+                font-family: "Inter";
+                font-size: 20px;
+                color: white;
+                opacity: 0.7;
+            }
+        }
+
+        .social-media-container .links {
+            flex-direction: row;
+        }
+    }
+}
