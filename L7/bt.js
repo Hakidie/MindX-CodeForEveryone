@@ -29,7 +29,7 @@ function sumOneToHundred() {
 //  2. In ra cac so tu 0 den 100 chia het cho 3 va 5
 function printZeroToHundred() {
     for(let i = 0; i <= 100; i++) {
-        if(i % 3 == 0 && i % 5 == 0) {
+        if(i % 3 === 0 && i % 5 === 0) {
             console.log(i + " ");
         }
     }
