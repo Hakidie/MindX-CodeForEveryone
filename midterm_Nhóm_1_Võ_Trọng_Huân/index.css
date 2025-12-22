@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins";
+}
+
+.body {
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 180px;
+
+    padding: 40px 50px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+
+    
+}
+
+.menu ul a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    margin-left: auto;
+}
+
+.account .user-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7200B8;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 0px 50px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+
+    width: 254px;
+    height: 783px;
+
+    padding: 50px 0px 150px 5px;
+
+    border-radius: 10px;
+    background-color: black;
+}
+
+.dashboard,
+.transaction,
+.notification,
+.support,
+.settings,
+.logout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    width: 180px;
+    
+    padding: 0px 10px;
+
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard a,
+.transaction a,
+.notification a,
+.support a,
+.settings a,
+.logout a {
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard {
+    height: 70px;
+    border-radius: 10px;
+    background-color: #A717FE;
+}
+
+.logout {
+    margin-top: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 1061px;
+    padding: 0px 0px 0px 15px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 56px;
+}
+
+.content-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content-header p {
+    margin-left: auto;
+    padding: 10px;
+    border: 1px solid #7200B8;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.row-one ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+
+    margin-top: 15px;
+}
+
+.row-one ul a {
+    height: 96px;
+    padding: 30px 20px;
+    background-color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: semiBold;
+    color: white;
+}
+
+.background-image-one,
+.background-image-two,
+.background-image-three {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.background-image-one {
+    top: 274px;
+    left: 311px;
+}
+
+.background-image-two {
+    top: 10.21px;
+    left: 348.29px;
+}
+
+.background-image-three {
+    top: 289px;
+    left: 772px;
+}
