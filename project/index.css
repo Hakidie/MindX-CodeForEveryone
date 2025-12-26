@@ -489,6 +489,108 @@ main {
     }
 }
 
+/* About us */
+.about-us-container {
+    height: 512px;
+    margin-top: 60px;
+    padding: 0px 60px;
+}
+
+.about-us-container .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    margin-top: 80px;
+}
+
+.about-us-container .title h2 {
+    width: 308px;
+    font-size: 24px;
+    font-weight: semiBold;
+    color: black;
+}
+
+.about-us-container .title .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 136px;
+    height: 40px;
+}
+
+.about-us-container .title .buttons-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 56px;
+    height: 40px;
+    padding: 10px 16px;
+
+    border-radius: 8px;
+    background-color: #94A3B8;
+}
+
+.about-us-container .reviews-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    overflow: hidden;
+
+    height: 276px;
+    margin-top: 24px;
+}
+
+.about-us-container .reviews-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+
+    min-width: 432px;
+    height: 276px;
+    padding: 24px 24px;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-container .reviews-container .card img {
+    width: 48px;
+    height: 48px;
+}
+
+.about-us-container .reviews-container .card p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+}
+
+.about-us-container .reviews-container .card .user-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+
+    width: 150px;
+    height: 60px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: semiBold;
+        color: black;
+    }
+
+    p {
+        font-size: 14px;
+        color: #334155; 
+    }
+}
+
 /* Bottom-images */
 .bottom-images-container {
     display: flex;
