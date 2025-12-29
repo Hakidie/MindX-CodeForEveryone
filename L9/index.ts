@@ -49,6 +49,8 @@ for (let key in car) {
     number_attributes += 1;
 }
 
+let count = Object.keys(car).length;
+
 console.log(number_attributes);
 
 //4.

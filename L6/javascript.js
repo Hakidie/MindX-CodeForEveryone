@@ -1,9 +1,3 @@
-// function printHelloWorld() {
-//     console.log("Hello world");
-// }
-
-// printHelloWorld();
-
 //  1. Tinh dien tich va chu vi hinh chu nhat
 function calRectangleArea(width, length) {
     let area = width * length;
@@ -169,31 +163,31 @@ function compareTimes() {
 }
 
 //  1. Tinh dien tich va chu vi hinh chu nhat
-//printRecAreaAndPerimeter();
+printRecAreaAndPerimeter();
 
 //  2. Chuyen doi giay sang gio-phut-giay
-//convertToHourMinSec();
+convertToHourMinSec();
 
 //  3. Tinh luy thua
-//printPower();
+printPower();
 
 //  4. Tinh trun binh cong 3 so bat ky
-//printAverage();
+printAverage();
 
 //  5. Tinh khoang cach 2 diem
-//printPointsDistance();
+printPointsDistance();
 
 //  6. Tinh trun binh cong 3 so bat ky
-//checkFirstIsLargest();
+checkFirstIsLargest();
 
 //  7. Kiem tra 2 chuoi co giong nhau khong
-//checkStringsIsTheSame();
+checkStringsIsTheSame();
 
 //  8. Kiem tra so duong
-//checkPositive();
+checkPositive();
 
 //  9. Kiem tra nam co nhuan khong
-//checkLeapYear();
+checkLeapYear();
 
 //  10. So sanh 2 moc thoi gian
-//compareTimes();
+compareTimes();
