@@ -395,3 +395,135 @@ main {
     }
 }
 
+/* Card container */
+.card-container {
+    width: 896px;
+    margin-top: 15px;
+    /* border: 1px solid pink; */
+}
+
+/* Grid cards */
+.card-container .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(212px, 1fr)); /*1fr 1fr 1fr 1fr;*/
+    grid-template-rows: auto auto;
+    gap: 16px;
+
+    width: 896px;
+    height: 617px;
+    /* border: 1px solid yellow; */
+}
+
+/* Card */
+.card-container .grid-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 212px;
+    height: 301px;
+    padding: 16px;
+
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card-container .grid-cards .card .picture {
+    text-align: center;
+    border-bottom: 1px solid #E2E8F0;
+    height: 210px;
+
+    h3 {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: semiBold;
+        color: #0F172A;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #334155;
+    }
+}
+
+.card-container .grid-cards .card button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 179px;
+    height: 40px;
+    padding: 10px 24px;
+
+    border-radius: 8px;
+    border: none;
+    background-color: #2563EB;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+/* Pagination */
+.card-container .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 211px;
+    height: 41px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid pink; */
+}
+
+.card-container .pagination button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 43px;
+    height: 41px;
+
+    /* box-shadow: inset 0 0 0 1px #E2E8F0;
+    border: none; */
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    border-right: 1px solid #E2E8F0;
+    border-left: 0px solid #E2E8F0;
+    background-color: white;
+    font-size: 12px;
+    font-weight: semiBold;
+    color: #0F172A;
+    cursor: pointer;
+
+    img {
+        width: 3.75px;
+        height: 7.5px;
+    }
+}
+
+.card-container .pagination button:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: inset 0 0 0 1px #E2E8F0;
+    border: none;
+}
+
+.card-container .pagination button:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: inset 0 0 0 1px #E2E8F0;
+    border: none;
+}
+
+.card-container .pagination button:nth-last-child(2) {
+    border-right: 0px solid #E2E8F0;
+}
