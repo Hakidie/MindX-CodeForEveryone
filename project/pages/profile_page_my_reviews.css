@@ -23,6 +23,12 @@ header a {
     font-size: 14px;
 }
 
+.byway-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo-container,
 .profile-container,
 .searchbar-container {
@@ -74,8 +80,6 @@ header a {
         color: white;
     }
 }
-
-
 
 .categories-container a,
 .teach-container a {
