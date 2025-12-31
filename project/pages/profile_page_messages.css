@@ -23,6 +23,12 @@ header a {
     font-size: 14px;
 }
 
+.byway-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo-container,
 .profile-container,
 .searchbar-container {
@@ -57,6 +63,12 @@ header a {
     height: 24px;
 }
 
+.profile-container .my-courses-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .profile-container .avatar {
     display: flex;
     justify-content: center;
@@ -67,15 +79,10 @@ header a {
 
     border-radius: 100%;
     background-color: #334155;
-
-    a {
-        font-size: 16px;
-        font-weight: medium;
-        color: white;
-    }
+    font-size: 16px;
+    font-weight: medium;
+    color: white;
 }
-
-
 
 .categories-container a,
 .teach-container a {
