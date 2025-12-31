@@ -356,6 +356,7 @@ main {
         width: 88%;
         height: 34px;
         border: none;
+        font-size: 14px;
         outline: none;
     }
 
@@ -412,6 +413,12 @@ main {
 
     height: auto;/*975px;*/
     /* border: 1px solid yellow; */
+}
+
+.chat-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .flex-cards .card {
