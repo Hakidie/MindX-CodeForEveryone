@@ -30,3 +30,33 @@ buttonChange.onclick = function () {
         check = false;
     }
 }
+
+// 4. 5.
+const inputField = document.querySelector('input.input-field');
+const submitButton = document.querySelector('button.add-button');
+const outputField = document.querySelector('p.output-field');
+const taskList = document.querySelector('ul.task-list');
+
+let listTask = JSON.parse(localStorage.getItem("listTask")) || [];
+
+function displayTasks() {
+    taskList.innerHTML = "";
+
+    listTask.forEach(task => {
+        const li = document.createElement('li');
+        li.innerText = task;
+        taskList.appendChild(li);
+    });
+}
+displayTasks();
+
+submitButton.onclick = function() {
+    const inputValue = inputField.value;
+
+    if(inputValue !== "") {
+        listTask.push(inputValue);
+        localStorage.setItem("listTask", JSON.stringify(listTask));
+        displayTasks();
+    }
+}
+
