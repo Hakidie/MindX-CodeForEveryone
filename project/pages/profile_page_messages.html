@@ -48,41 +48,43 @@
 
             <div class="card-container">
                 <div class="flex-cards">
-                    <a href="../pages/profile_page_messages_chat.html" class="chat-link">
-                        <div class="card">
+                    <a href="../pages/profile_page_messages_chat.html?teacher=Ronald%20Richards&img=../pictures/profile/Ellipse%20140.png" class="chat-link">
+                        <div class="card" id="card-Ronald Richards">
                             <div class="header">
                                 <div class="teacher">
                                     <img src="../pictures/profile/Ellipse 140.png" alt="teacher avatar">
                                     <h3>Ronald Richards</h3>
                                 </div>
 
-                                <div class="time">
+                                <div class="time" id="time-Ronald Richards">
                                     <p>18th March, 2024</p>
                                 </div>
                             </div>
 
-                            <div class="chat">
+                            <div class="chat" id="msg-Ronald Richards">
                                 <p>Thank you for asking your doubt, I'll send you a pdf file which cover the problems you are facing. If you have any...</p>
                             </div>
                         </div>
                     </a>
 
-                    <div class="card">
-                        <div class="header">
-                            <div class="teacher">
-                                <img src="../pictures/profile/Ellipse 140(1).png" alt="teacher avatar">
-                                <h3>Devon Lane</h3>
+                    <a href="../pages/profile_page_messages_chat.html?teacher=Devon%20Lane&img=../pictures/profile/Ellipse%20140(1).png" class="chat-link">
+                        <div class="card" id="card-Devon Lane">
+                            <div class="header">
+                                <div class="teacher">
+                                    <img src="../pictures/profile/Ellipse 140(1).png" alt="teacher avatar">
+                                    <h3>Devon Lane</h3>
+                                </div>
+
+                                <div class="time" id="time-Devon Lane">
+                                    <p>18th March, 2024</p>
+                                </div>
                             </div>
 
-                            <div class="time">
-                                <p>18th March, 2024</p>
+                            <div class="chat" id="msg-Devon Lane">
+                                <p>I'll Get back to you as soon as possbile.</p>
                             </div>
                         </div>
-
-                        <div class="chat">
-                            <p>I'll Get back to you as soon as possbile.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 
                 <div class="pagination">
@@ -100,5 +102,6 @@
     <div id="footer-placeholder"></div>
 
     <script src="./main.js"></script>
+    <script src="../pages/message-card.js"></script>
 </body>
 </html>
