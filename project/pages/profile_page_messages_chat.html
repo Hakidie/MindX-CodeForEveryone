@@ -30,8 +30,8 @@
                     <a href="profile_page_messages.html"><img src="../pictures/profile/back-arrow.png" alt="back to messages"></a>
 
                     <div class="teacher">
-                        <img src="../pictures/profile/teacher-60x60.png" alt="teacher avatar">
-                        <h3>Ronald Richards</h3>
+                        <img src="../pictures/profile/teacher-60x60.png" alt="teacher avatar" id="teacher-img">
+                        <h3 id="teacher-name">Ronald Richards</h3>
                     </div>
 
                     <div class="chat-button">
@@ -39,11 +39,11 @@
                     </div>
                 </div>
 
-                <div class="chat"></div>
+                <div class="chat" id="chat-box"></div>
 
                 <div class="chat-input">
-                    <input type="text" placeholder="Type your Message">
-                    <button>Send</button>
+                    <input type="text" id="message-input" placeholder="Type your Message">
+                    <button id="send-btn">Send</button>
                 </div>
             </div>
         </div>
@@ -53,5 +53,6 @@
     <div id="footer-placeholder"></div>
 
     <script src="./main.js"></script>
+    <script src="../pages/message.js"></script>
 </body>
 </html>
