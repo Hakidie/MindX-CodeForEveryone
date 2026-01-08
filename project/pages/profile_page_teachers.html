@@ -26,29 +26,45 @@
 
                 <div class="toolbar">
                     <div class="searchbar">
-                        <input type="text" placeholder="Search User">
+                        <input type="text" id="courseSearch" placeholder="Search teachers">
                         <img src="../pictures/profile/Search.png" alt="search-icon">
                     </div>
-                    
+
                     <div class="sort-container">
                         <p>Sort By</p>
 
-                        <button class="relevence">
-                            Relevence
-                            <img src="../pictures/profile/down-chevron.png" alt="relevence-icon">
-                        </button>
+                        <div class="dropdown-sort">
+                            <button class="relevence">
+                                <span id="currentSort">Newest</span>
+                                <img src="../pictures/profile/down-chevron.png" alt="relevence-icon">
+                            </button>
 
-                        <button class="fiter">
-                            <img src="../pictures/profile/filter.png" alt="filter-icon">
-                            Filter
-                        </button>
+                            <div class="dropdown-content" id="sortOptions">
+                                <a href="#" data-sort="newest">Newest</a>
+                                <a href="#" data-sort="oldest">Oldest</a>
+                                <a href="#" data-sort="popular">Popular</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-filter">
+                            <button class="fiter" id="filterBtn">
+                                <img src="../pictures/profile/filter.png" alt="filter-icon">
+                                <span id="currentFilter">Filter</span>
+                            </button>
+
+                            <div class="dropdown-content" id="filterOptions">
+                                <a href="#" data-filter="all">Show All</a>
+                                <a href="#" data-filter="high-rating">Ratings > 1000</a>
+                                <a href="#" data-filter="low-rating">Ratings < 1000</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="card-container">
-                <div class="grid-cards">
-                    <div class="card">
+                <div class="grid-cards" id="teacherGrid">
+                    <!-- <div class="card">
                         <div class="picture">
                             <img src="../pictures/instructor.png" alt="instructor avatar">
                             <h3>Ronald Richards</h3>
@@ -150,7 +166,7 @@
                             Send Message
                             <img src="../pictures/profile/mail.png">
                         </button>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="pagination">
@@ -168,5 +184,6 @@
     <div id="footer-placeholder"></div>
 
     <script src="./main.js"></script>
+    <script src="../pages/s-s-f-teachers.js"></script>
 </body>
 </html>
