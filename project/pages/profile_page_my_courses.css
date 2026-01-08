@@ -1,6 +1,7 @@
 @import url("./header.css");
 @import url("./footer.css");
 @import url("./profile_sidebar.css");
+@import url("./toolbar.css");
 
 * {
     box-sizing: border-box;
@@ -33,94 +34,7 @@ main {
     /* border: 1px solid pink; */
 }
 
-/* Toolbar */
-.content-container .toolbar-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-    height: 94px;
-    /* border: 1px solid yellow; */
-}
-
-.content-container .toolbar-container .title {
-    width: 118px;
-    height: 30px;
-    
-    h2 {
-        font-size: 20px;
-        font-weight: 600;
-        color: #0F172A;
-    }
-
-    span {
-        font-size: 12px;
-        font-weight: 600;
-    }
-}
-
-.content-container .toolbar-container .toolbar,
-.content-container .toolbar-container .toolbar .searchbar,
-.content-container .toolbar-container .toolbar .sort-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 48px;
-    /* border: 1px solid orange; */
-}
-
-.content-container .toolbar-container .toolbar .searchbar {
-    width: 300px;
-    height: 44px;
-    padding: 10px;
-    border: 1px solid #E2E8F0;
-    border-radius: 8px;
-
-    input {
-        width: 88%;
-        height: 34px;
-        border: none;
-        font-size: 14px;
-        outline: none;
-    }
-
-    input::placeholder {
-        font-size: 14px;
-        color:#334155;
-    }
-}
-
-.content-container .toolbar-container .toolbar .sort-container {
-    gap: 15px;
-
-    /* border: 1px solid red; */
-
-    p {
-        font-size: 16px;
-        color: #0F172A;
-    }
-
-    button {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 6px;
-
-        height:48px;
-        padding: 10px 24px;
-        
-        border: 1px solid #0F172A;
-        border-radius: 8px;
-        background: white;
-        box-shadow: inset 0 0 0 1px #0F172A;
-        border: none;
-
-        font-size: 14px;
-        color: #0F172A;
-        cursor: pointer;
-    }
-}
 
 /* Card container */
 .card-container {
@@ -132,7 +46,8 @@ main {
 /* Grid cards */
 .card-container .grid-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(298px, 1fr)); /*1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fill, minmax(298px, 298px));
+    /*grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));*/ /*1fr 1fr 1fr 1fr;*/
     gap: 20px;
 
     /* width: 896px; */
@@ -155,6 +70,10 @@ main {
     border: 1px solid #E2E8F0;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.card-container .grid-cards .card.hidden {
+    display: none !important;
 }
 
 .card-container .grid-cards .card h3 {
