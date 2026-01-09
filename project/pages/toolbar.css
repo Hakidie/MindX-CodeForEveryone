@@ -135,3 +135,8 @@
 .show {
     display: block;
 }
+
+.dropdown-sort.active .dropdown-content,
+.dropdown-filter.active .dropdown-content {
+    display: block;
+}
