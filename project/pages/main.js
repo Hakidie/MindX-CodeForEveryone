@@ -13,7 +13,14 @@ loadHTML('header.html', 'header-placeholder');
 // Load footer.html vào #footer-placeholder
 loadHTML('footer.html', 'footer-placeholder');
 
+// Load sidebar for profiles pages
 loadHTML('profile_sidebar.html', 'profile-sidebar-placeholder');
+
+// Load toolbar for profiles pages
+loadHTML('toolbar.html', 'toolbar-placeholder');
+
+// Load pagination for profiles page contents
+loadHTML('pagination.html', 'pagination-placeholder');
 
 
 
