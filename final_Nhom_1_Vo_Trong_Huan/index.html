@@ -9,10 +9,86 @@
 <body>
     <div class="minigame-widget">
         <!-- Minigame display -->
-        <div clas="minigame-display-container"></div>
+        <div clas="minigame-display-container">
+            <!-- Start button -->
+            <div class="minigame-display-header">
+                <button>Bắt đầu</button>
+            </div>
+
+            <!-- Minigame -->
+            <div class="minigame-display-main">
+                <!-- Display box -->
+                <div class="minigame-display-box">
+                    <div class="box" id="box-1">1</div>
+                    <div class="box" id="box-2">2</div>
+                    <div class="box" id="box-3">3</div>
+                    <div class="box" id="box-4">4</div>
+                    <div class="box" id="box-5">5</div>
+                    <div class="box" id="box-6">6</div>
+                    <div class="box" id="box-7">7</div>
+                    <div class="box" id="box-8">8</div>
+                    <div class="box" id="box-9">9</div>
+                    <div class="box" id="box-10">10</div>
+                    <div class="box" id="box-11">11</div>
+                    <div class="box" id="box-12">12</div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="minigame-sidebar">
+                    <!-- Clock -->
+                    <div class="top-box">
+                        <p>Đồng hồ</p>
+                        <h3>00:00</h3>
+                    </div>
+
+                    <!-- Manual -->
+                    <div class="bottom-box">
+                        <p>Hướng dẫn di chuyển</p>
+
+                        <div class="manual-box">
+                            <div class="manual-box-top">
+                                <div class="up-arrow">&uarr;</div>
+                            </div>
+
+                            <div class="manual-box-bottom">
+                                <div class="left-arrow">&larr;</div>
+                                <div class="down-arrow">&darr;</div>
+                                <div class="right-arrow">&rarr;</div>
+                            </div>
+                        </div>
+
+                        <div class="manual-box">
+                            <div class="manual-box-top">
+                                <div class="up-arrow">W</div>
+                            </div>
+
+                            <div class="manual-box-bottom">
+                                <div class="left-arrow">A</div>
+                                <div class="down-arrow">S</div>
+                                <div class="right-arrow">D</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- History display -->
-        <div clas="minigame-history-container"></div>
+        <div clas="minigame-history-container">
+            <!-- Title -->
+            <div class="minigame-history-title">
+                <p>Lịch sử lượt chơi</p>
+            </div>
+
+            <!-- History -->
+            <table class="minigame-history-table">
+                <tr>
+                    <th>#</th>
+                    <th>Bước đi</th>
+                    <th>Thời gian</th>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
