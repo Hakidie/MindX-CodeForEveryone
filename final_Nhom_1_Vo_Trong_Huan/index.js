@@ -15,6 +15,9 @@ start_button.addEventListener('click', () => {
         start_button.style.backgroundColor = "red";
         start_button.style.color = "white";
 
+        const win_button = document.getElementById('win');
+        win_button.style.display = "none";
+
         // Start the time display
         timer_interval = setInterval(() => {
             total_seconds++;
@@ -103,6 +106,7 @@ document.addEventListener('keydown', (e) => {
     // If a valid move was made, swap the boxes
     if (target_index !== -1) {
         swapBoxes(boxes, current_index, target_index);
+        checkWin();
     }
 });
 
@@ -118,5 +122,28 @@ function swapBoxes(boxes, idx1, idx2) {
     } else {
         node1.replaceWith(node2);
         grid_container.insertBefore(node1, afterNode2);
+    }
+}
+
+// Function to check for winning
+function checkWin() {
+    const grid_container = document.querySelector('.minigame-display-box');
+    const boxes = Array.from(grid_container.children);
+    const win_button = document.getElementById('win');
+
+    // Check if every box is in the right order
+    const isOrdered = boxes.every((box, index) => {
+        // We add 1 because index starts at 0, but boxes start at box-1
+        return box.id === `box-${index + 1}`;
+    });
+
+    if (isOrdered && status_started) {
+        clearInterval(timer_interval);
+        status_started = false;
+        
+        const start_button = document.getElementById('start-button');
+        start_button.innerText = "Bắt đầu";
+
+        win_button.style.display = "block";
     }
 }
