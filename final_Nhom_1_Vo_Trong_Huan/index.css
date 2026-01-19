@@ -4,6 +4,8 @@
     --test: #FF0000;
     --grey-100: #f3f4f6;
     --grey-500: #6b7280;
+    --emerald-500: #10b981;
+    --emerald-100: #d1fae5;
 }
 
 
@@ -46,6 +48,7 @@
     border-radius: 10px;
 }
 
+
 /* Start button */
 .minigame-display-header {
     display: flex;
@@ -64,6 +67,93 @@
         color: white;
         cursor: pointer;
     }
+}
+
+/* Main */
+.minigame-display-main {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+/* Display box */
+.minigame-display-box {
+
+}
+
+/* Sidebar */
+.minigame-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    /* border: 1px solid pink; */
+}
+
+.top-box {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--emerald-100);
+    text-align: center;
+
+    p {
+        font-weight: bold;
+    }
+
+    h3 {
+        margin-top: 15px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.bottom-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--grey-100);
+
+    p {
+        font-weight: bold;
+    }
+}
+
+.manual-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.manual-box-top {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.manual-box-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.up-arrow,
+.left-arrow,
+.down-arrow,
+.right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 5px;
+    background-color: lightgrey;
 }
 
 /* History display */
