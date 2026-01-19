@@ -91,6 +91,10 @@
     }
 }
 
+#win {
+    display: none;
+}
+
 /* Main */
 .minigame-display-main {
     display: flex;
