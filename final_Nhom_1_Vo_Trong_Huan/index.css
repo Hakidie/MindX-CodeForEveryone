@@ -1,23 +1,40 @@
-@grey-100: #f3f4f6;
-@test: #FF0000;
 :root {
     --test: #FF0000;
     --grey-100: #f3f4f6;
     --grey-500: #6b7280;
     --emerald-500: #10b981;
     --emerald-100: #d1fae5;
+    --red-100: #fee2e2;
+    --red-500: #ef4444;
+    --blue-100: #BFD3E6;
+    --blue-500: #1E40AF;
+    --purple-100: #E9D5FF;
+    --purple-500: #A855F7;
+    --yellow-100: #E9E3A5;
+    --yellow-500: #B45309;
+    --rose-100: #F3D8E5;
+    --rose-500: #9D174D;
+    --Blue-100: #cad1fa;
+    --Blue-500: #1D4ED8;
+    --Gray-100: #E5E7EB;
+    --Gray-500: #374151;
+    --mint-100: #A8DADC;
+    --mint-500: #065F46;
+    --orange-100: #F3E8BB;
+    --orange-500: #D97706;
+    --lime-100: #D9E3B1;
+    --lime-500: #65A30D;
+    --black-100: #000000;
+    --black-500: #000000;
 }
-
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
+    /* background-color: grey; */
     font-size: 15px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 /* Minigame window */
@@ -42,9 +59,14 @@
 
 /* Minigame display */
 .minigame-display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+
     width: 100%;
     height: 100%;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     border-radius: 10px;
 }
 
@@ -72,13 +94,94 @@
 /* Main */
 .minigame-display-main {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 15px;
 }
 
 /* Display box */
 .minigame-display-box {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
 
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--grey-100);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 150px;
+    
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#box-1 {
+    background-color: var(--emerald-100);
+    color: var(--emerald-500);
+}
+
+#box-2 {
+    background-color: var(--red-100);
+    color: var(--red-500);
+}
+
+#box-3 {
+    background-color: var(--blue-100);
+    color: var(--blue-500);
+}
+
+#box-4 {
+    background-color: var(--purple-100);
+    color: var(--purple-500);
+}
+
+#box-5 {
+    background-color: var(--yellow-100);
+    color: var(--yellow-500);
+}
+
+#box-6 {
+    background-color: var(--rose-100);
+    color: var(--rose-500);
+}
+
+#box-7 {
+    background-color: var(--Blue-100);
+    color: var(--Blue-500);
+}
+
+#box-8 {
+    background-color: var(--Gray-100);
+    color: var(--Gray-500);
+}
+
+#box-9 {
+    background-color: var(--mint-100);
+    color: var(--mint-500);
+}
+
+#box-10 {
+    background-color: var(--orange-100);
+    color: var(--orange-500);
+}
+
+#box-11 {
+    background-color: var(--lime-100);
+    color: var(--lime-500);
+}
+
+#box-12 {
+    background-color: var(--black-100);
+    color: var(--black-500);
 }
 
 /* Sidebar */
