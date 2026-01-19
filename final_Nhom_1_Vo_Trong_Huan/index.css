@@ -1,0 +1,100 @@
+@grey-100: #f3f4f6;
+@test: #FF0000;
+:root {
+    --test: #FF0000;
+    --grey-100: #f3f4f6;
+    --grey-500: #6b7280;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-size: 15px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* Minigame window */
+.minigame-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    width: 75%;
+    height: 720px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+
+    border: 1px solid var(--grey-100);
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Minigame display */
+.minigame-display-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid pink;
+    border-radius: 10px;
+}
+
+/* Start button */
+.minigame-display-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1px;
+    /* border: 1px solid pink; */
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: green;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/* History display */
+.minigame-history-container {
+    width: 100%;
+    padding: 15px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    background-color: var(--grey-100);
+}
+
+.minigame-history-title {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.minigame-history-table {
+    width: 100%;
+    margin-top: 15px;
+    background-color: lightgrey;
+    font-weight: bold;
+
+    th{
+        padding: 5px;
+        border-left: 1px solid grey;
+        font-size: 12px;
+        text-align: start;
+    }
+
+    th:first-child {
+        border-left: none;
+    }
+}
