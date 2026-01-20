@@ -32,8 +32,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    /* background-color: grey; */
     font-size: 15px;
 }
 
@@ -46,7 +44,7 @@
     gap: 15px;
 
     width: 75%;
-    height: 720px;
+    min-height: 720px;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -74,6 +72,7 @@
 /* Start button */
 .minigame-display-header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -93,6 +92,8 @@
 
 #win {
     display: none;
+    background-color: transparent;
+    color: red;
 }
 
 /* Main */
@@ -281,10 +282,12 @@
 .minigame-history-table {
     width: 100%;
     margin-top: 15px;
+    border: none;
+    border-collapse: collapse;
     background-color: lightgrey;
     font-weight: bold;
 
-    th{
+    th {
         padding: 5px;
         border-left: 1px solid grey;
         font-size: 12px;
@@ -293,5 +296,12 @@
 
     th:first-child {
         border-left: none;
+    }
+
+    td {
+        padding: 5px;
+        background-color: white;
+        font-size: 12px;
+        text-align: start;
     }
 }
